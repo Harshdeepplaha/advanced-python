@@ -1,0 +1,51 @@
+
+
+
+
+
+no_of_test_and_players = input()
+no_of_test_and_players = list(no_of_test_and_players.split())
+n = int(no_of_test_and_players[0])
+m = int(no_of_test_and_players[1])
+info = {}
+player_pos = []
+for i in range((m+3)):
+    if (i%2 == 0):
+        player_pos.append(i)
+
+       
+
+for i in range(n):
+    player_names_and_runs = input().split()
+    names = []
+    runs = [] 
+    for k in range(m+2):
+        if k%2==0:
+            names.append(player_names_and_runs[k])
+        elif k%2 != 0:
+            runs.append(int(player_names_and_runs[k]))  
+        
+    # print(names)
+    # print(runs)
+    test = {}
+    test[(names[i])]  = runs[i]
+    
+    info[i] = test 
+    
+    
+for i in range(n):
+    
+    if info[i].key() == info[i+1].keys():
+        final_scores =              
+    
+    
+    
+print(info)      
+            
+            
+            
+#    
+    
+
+
+
